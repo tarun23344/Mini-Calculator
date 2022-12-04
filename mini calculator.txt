@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a,b;
+  char choice;
+  clrscr();
+  printf("Enter 2 int:");
+  scanf("%d %d",&a,&b);
+  printf("select an operation:");
+  printf("\na,+.Add\nb,-.Sub\nc,*.Mul\nd,/.divide");
+  printf("\nEnter your choice:");
+  fflush(stdin);
+  scanf("%c",&choice);
+  switch(choice)
+  {
+   case 'a':case '+':
+      printf("add is %d",a+b);
+      break;
+   case 'b':case '-':
+      printf("sub is %d",a-b);
+      break;
+   case 'c':case '*':
+      printf("mul is %d",a*b);
+      break;
+   case 'd':case '/':
+      printf("divide is %f",a/(float)b);
+      break;
+      default:
+      printf("wrong choice");
+      }
+      getch();
+      }
